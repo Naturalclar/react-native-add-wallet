@@ -17,6 +17,6 @@ const AddWallet = NativeModules.AddWallet
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return AddWallet.multiply(a, b);
+export function oopenPaymentSetup(): Promise<void> {
+  return AddWallet.openPaymentSetup();
 }
