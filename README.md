@@ -2,6 +2,12 @@
 
 Add to Wallet Module for React Native
 
+| Button                                                                                                                        | Add to Wallet                                                                                                                 |
+|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| ![Add To Wallet Button](https://user-images.githubusercontent.com/6936373/154267490-f118e5a8-348c-49be-b76c-7412adc4fdee.png) | ![Add To Wallet Screen](https://user-images.githubusercontent.com/6936373/154267499-aacffb72-c305-4b46-b76e-e309d5cf3c50.png) |
+
+
+
 ## Installation
 
 ```sh
@@ -11,11 +17,16 @@ npm install react-native-add-wallet
 ## Usage
 
 ```js
-import { multiply } from "react-native-add-wallet";
-
+import { AddToWalletButton, openPaymentSetup } from 'react-native-add-wallet';
 // ...
 
-const result = await multiply(3, 7);
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <AddToWalletButton onPress={openPaymentSetup} />
+    </View>
+  );
+}
 ```
 
 ## Contributing
