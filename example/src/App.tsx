@@ -1,18 +1,12 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { oopenPaymentSetup } from 'react-native-add-wallet';
+import { StyleSheet, View } from 'react-native';
+import { AddToWalletButton, openPaymentSetup } from 'react-native-add-wallet';
 
 export default function App() {
-  const [result] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    oopenPaymentSetup();
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <AddToWalletButton onPress={openPaymentSetup} />
     </View>
   );
 }

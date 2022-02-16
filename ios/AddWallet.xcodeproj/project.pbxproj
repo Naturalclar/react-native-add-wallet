@@ -6,12 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-
-		5E555C0D2413F4C50049A1A2 /* AddWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* AddWallet.m */; };
-
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -26,10 +20,12 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libAddWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAddWallet.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
 		B3E7B5881CC2AC0600A0062D /* AddWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddWallet.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* AddWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddWallet.m; sourceTree = "<group>"; };
-
+		C74AD82227BD1D4200FB798F /* AddToWalletButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddToWalletButton.m; sourceTree = "<group>"; };
+		C74AD82327BD1D4200FB798F /* AddToWalletButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddToWalletButton.h; sourceTree = "<group>"; };
+		C74AD82427BD1D4200FB798F /* AddToWalletButtonContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddToWalletButtonContainer.h; sourceTree = "<group>"; };
+		C74AD82527BD1D4200FB798F /* AddToWalletButtonContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddToWalletButtonContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +50,12 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
 				B3E7B5881CC2AC0600A0062D /* AddWallet.h */,
 				B3E7B5891CC2AC0600A0062D /* AddWallet.m */,
-
+				C74AD82327BD1D4200FB798F /* AddToWalletButton.h */,
+				C74AD82227BD1D4200FB798F /* AddToWalletButton.m */,
+				C74AD82427BD1D4200FB798F /* AddToWalletButtonContainer.h */,
+				C74AD82527BD1D4200FB798F /* AddToWalletButtonContainer.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,9 +117,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-				B3E7B58A1CC2AC0600A0062D /* AddWallet.m in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +229,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = AddWallet;
 				SKIP_INSTALL = YES;
-
 			};
 			name = Debug;
 		};
@@ -251,7 +245,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = AddWallet;
 				SKIP_INSTALL = YES;
-
 			};
 			name = Release;
 		};

@@ -17,6 +17,6 @@ const AddWallet = NativeModules.AddWallet
       }
     );
 
-export function oopenPaymentSetup(): Promise<void> {
+export function openPaymentSetup(): Promise<void> {
   return AddWallet.openPaymentSetup();
 }
